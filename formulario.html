@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es"></html>
+<html>
+<head>
+	<title>Formulario</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estiloFormulario.css">
+</head>
+<body>
+<div id="contenedor">
+	<header>
+		<img src="imagenes/logo3.png" class="logo">
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html"> Inicio </a></li>
+			<li><a href="biografia.html"> Biografía</a></li>
+			<li><a href="discografia.html"> Discografía </a></li>
+			<li><a href="galeria_imagenes.html"> Galería </a></li>
+			<li><a href="formulario.html"> Inscripción Fans </a></li>
+		</ul>
+	</nav>
+	<main>
+		<form name="form1" id="form1" method="get" action="#"> 
+			<h1> Formulario de Inscripcion FansClub </h1>
+			<hr>
+			
+			<div class="d">
+				<label class="label" for="nombre">Nombre Completo</label>
+				<input type="text" name="nombre" id="nombre">
+			</div>
+			<div class="d">
+				<label class="label"> Género </label>
+				<input type="radio" name="genero" id="Maculino" value="masculino"> 
+				<label for="masculino" class="gen">Masculino</label>
+				<input type="radio" name="genero" id="femenino" value="femenino"> 
+				<label for="femenino" class="gen">Femenino</label>
+			</div>
+			<div class="d">
+				<label class="label" for="correo">Correo</label>
+				<input type="email" name="correo" id="correo">
+			</div>
+			<div class="d">
+				<label class="label" for="telefono">Celular</label>
+				<input type="text" name="telefono" id="telefono" value="+52">
+			</div>
+			<div class="d">
+				<label class="label" for="pais">Estado de Residencia</label>
+				<select name="pais" id="pais">
+					<option value=""> - Seleccionar - </option>
+					<option value="MEXICO"> MEXICO </option>
+					<option value="YUCATAN"> YUCATAN </option>
+					<option value="CHIHUAHUA"> CHIHUAHUA </option>
+					<option value="VERACRUZ"> VERACRUZ </option>
+					<option value="CAMPECHE"> CAMPECHE </option>
+					<option value="QUINTANARRO"> QUINTANARRO </option>
+					<option value="BAJA CALIFORNIA"> BAJA CALIFORNIA </option>
+					<option value="TABASCO"> TABASCO </option>
+					<option value="GUADALAJARA"> GUADALAJARA </option>
+					<option value="ECATEPEC"> ECATEPEC </option>
+					<option value="MONTERREY"> MONTERREY </option>
+					
+				</select>
+			</div>
+			
+			<div class="d">
+				<label class="label"> Cuéntanos sobre tí </label>
+				<textarea name="descripcion" id="descripcion"></textarea>
+			</div>
+			<div class="btns">
+				<input type="submit" name="btnGuardar" class="botones" value="Guardar">
+				<input type="reset" name="btnReset" class="botones" value="Cancelar">
+			</div>
+		</form>
+	</main>
+	<footer>
+		<span> AVICII </span><br>
+	</footer>
+</div>
+</body>
+</html>
